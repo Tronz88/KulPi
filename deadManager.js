@@ -29,11 +29,16 @@ function deadChecker(){
         cancelAnimationFrame(player2IdleLoop)
         cancelAnimationFrame(player3IdleLoop)
 
+        battleMusic1.pause()
+        battleMusic2.pause()
+        miniBossMusic.pause()
+        finalBossMusic.pause()
+        gameOverMusic.play()
         ctx.fillStyle = "#070707"
         ctx.fillRect(0, 0, gridLength * 5, gridLength * 4)
         ctx.fillStyle = "#ECDBBA"
         ctx.textAlign = "center"
-        ctx.font = `${gridLength / 2} verdana`
+        ctx.font = `50px verdana`
         ctx.fillText("Game Over", gridLength*2.5, gridLength * 2)
         messageLogs.innerHTML = ""
 
@@ -51,7 +56,7 @@ function deadChecker(){
             ctx.fillRect(0, 0, gridLength * 5, gridLength * 4)
             ctx.fillStyle = "#ECDBBA"
             ctx.textAlign = "center"
-            ctx.font = `70px verdana`
+            ctx.font = `50px verdana`
             ctx.fillText(`Level ${nextLevel}: Round ${nextRound}`, gridLength*2.5, gridLength * 2)
             messageLogs.innerHTML = ""
             setTimeout(() => {
@@ -60,11 +65,14 @@ function deadChecker(){
                 }, 1);
             }, 3000);
         } else {
+            finalBossMusic.pause()
+            finalBossMusic.currentTime = 0
+            gameCompleteMusic.play()
             ctx.fillStyle = "#070707"
             ctx.fillRect(0, 0, gridLength * 5, gridLength * 4)
             ctx.fillStyle = "#ECDBBA"
             ctx.textAlign = "center"
-            ctx.font = `${gridLength / 2} verdana`
+            ctx.font = `50px verdana`
             ctx.fillText("Game Complete", gridLength*2.5, gridLength * 2)
             messageLogs.innerHTML = ""
         }
