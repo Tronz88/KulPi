@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Select</title>
+    <title>Kulturang Pinoy RPG</title>
 
     <link rel="stylesheet" href="script/stylesheet.css" type="text/css">
 </head>
 <body>
     <div id="characterSelect">
         <a onclick="backgroundMusic()"><p id="backgroundMusic">♫</p></a>
+        
         <h1>Character Select</h1>
         <h2>Pick 1 Character for each Player</h2>
-        <p id="player1Selection"><button onclick="playerList('player1')">Player 1</button>:</p>
-        <p id="player2Selection"><button onclick="playerList('player2')">Player 2</button>: </p>
-        <p id="player3Selection"><button onclick="playerList('player3')">Player 3</button>: </p>
-    
+        <p id="player1Selection"><button onclick="playerList('player1')">Player 1</button></p>
+        <p id="player2Selection"><button onclick="playerList('player2')">Player 2</button></p>
+        <p id="player3Selection"><button onclick="playerList('player3')">Player 3</button></p>
         <div id="portraitsList"></div><br>
     
-        <button onclick="preBattle()">Continue</button>
-        <div id="characterDescription">
-        </div>
-        <div id="characterCloseUp">
-        </div>
+        <div id="characterDescription"></div>
+        <div id="characterCloseUp"></div>
         <div id="characterIntroduction"></div>
+        
+        <button onclick="preBattle()">Continue</button>
     </div>
     <div id="gameProper">
         <div id="canvasHolder"><canvas height="0" width="0"></canvas></div>
