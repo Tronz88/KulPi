@@ -212,6 +212,9 @@ function resetRound(round, level){
             enemy3 = duwende3
             nextRound = 2
             nextLevel = 1
+            characterSelectMusic.pause()
+            characterSelectMusic.currentTime = 0
+            battleMusic1.play()
             setTimeout(() => {
                 intro()
             }, 1000);
@@ -221,6 +224,7 @@ function resetRound(round, level){
             enemy3 = duwende2
             nextRound = 1
             nextLevel = 2
+            battleMusic1.currentTime = 0
         }
     } else if(level === 2){
         canvas.style.backgroundImage = "url(images/backgrounds/spanish.png)"
@@ -230,18 +234,25 @@ function resetRound(round, level){
             enemy3 = spanishSoldier3
             nextRound = 2
             nextLevel = 2
+            battleMusic1.pause()
+            battleMusic1.currentTime = 0
+            battleMusic2.play()
         } else if(round === 2){
             enemy1 = duwende1
             enemy2 = spanishSoldier1
             enemy3 = spanishSoldier2
             nextRound = 3
             nextLevel = 2
+            battleMusic2.play()
         } else if(round === 3){
             enemy1 = magellan
             enemy2 = spanishSoldier1
             enemy3 = spanishSoldier2
             nextRound = 1
             nextLevel = 3
+            battleMusic2.pause()
+            battleMusic2.currentTime = 0
+            miniBossMusic.play()
             setTimeout(() => {
                 intro()
             }, 1000);
@@ -254,29 +265,38 @@ function resetRound(round, level){
             enemy3 = duwende2
             nextRound = 2
             nextLevel = 3
+            miniBossMusic.pause()
+            miniBossMusic.currentTime = 0
+            battleMusic2.play()
         } else if(round === 2){
             enemy1 = corruptPolice1
             enemy2 = spanishSoldier1
             enemy3 = duwende1
             nextRound = 3
             nextLevel = 3
+            battleMusic2.play()
         } else if(round === 3){
             enemy1 = corruptPolice3
             enemy2 = spanishSoldier1
             enemy3 = spanishSoldier2
             nextRound = 4
             nextLevel = 3
+            battleMusic2.play()
         } else if(round === 4){
             enemy1 = corruptPolice1
             enemy2 = corruptPolice2
             enemy3 = kapre
             nextRound = 5
             nextLevel = 3
+            battleMusic2.play()
         } else if(round === 5){
             enemy1 = corruptPolitician
             enemy2 = corruptPolice1
             enemy3 = kapre
             nextLevel = 0
+            battleMusic2.pause()
+            battleMusic2.currentTime = 0
+            finalBossMusic.play()
             setTimeout(() => {
                 intro()
             }, 1000);
@@ -312,12 +332,6 @@ function resetRound(round, level){
     enemy3.currentHealth = enemy3.health
     enemy3.currentAttack = enemy3.attack
     enemy3.currentDefense = enemy3.defense
-
-    if(battleMusicCounter === 0){
-        characterSelectMusic.pause()
-        battleMusic.play()
-        battleMusicCounter++
-    }
 
     setTimeout(() => {
         startBattle()
