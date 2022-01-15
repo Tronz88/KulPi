@@ -132,7 +132,6 @@ let currentSkill
 let nextRound
 let nextLevel
 let randomNumber
-let battleMusicCounter = 0
 let messageLogs = document.getElementById("tdMessageLogs")
 
 function preBattle(){
