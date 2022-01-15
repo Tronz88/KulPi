@@ -48,8 +48,14 @@ let targetCharacterHitSpritesheet = new Image();
 let attackingCharacterSkillSpritesheet = new Image();
 let attackingCharacterEnhanceSpritesheet = new Image();
 
-let characterSelectMusic = new Audio;
-let battleMusic = new Audio;
+let characterSelectMusic = new Audio();
+let battleMusic1 = new Audio();
+let battleMusic2 = new Audio();
+let miniBossMusic = new Audio();
+let finalBossMusic = new Audio();
+let gameCompleteMusic = new Audio();
+let gameOverMusic = new Audio();
+
 let hitSound = new Audio();
 let enhanceSound = new Audio();
 let missSound = new Audio();
@@ -58,21 +64,35 @@ let buttonSound = new Audio();
 let buttonSound2 = new Audio();
 let playerVoice = new Audio();
 
-battleMusic.loop = true
-battleMusic.volume = 0.5
 characterSelectMusic.loop = true
 characterSelectMusic.volume = 0.5
+battleMusic1.loop = true
+battleMusic1.volume = 0.5
+battleMusic2.loop = true
+battleMusic2.volume = 0.5
+miniBossMusic.loop = true
+miniBossMusic.volume = 0.5
+finalBossMusic.loop = true
+finalBossMusic.volume = 0.5
+gameCompleteMusic.loop = true
+gameCompleteMusic.volume = 0.5
+gameOverMusic.loop = true
+gameOverMusic.volume = 0.5
 
 characterSelectMusic.src = "music/characterSelectMusic.ogg"
-battleMusic.src = "music/battleMusic.ogg"
+battleMusic1.src = "music/battleMusic1.ogg"
+battleMusic2.src = "music/battleMusic2.ogg"
+miniBossMusic.src = "music/miniBoss.ogg"
+finalBossMusic.src = "music/finalBoss.ogg"
+gameCompleteMusic.src = "music/gameComplete.ogg"
+gameOverMusic.src = "music/gameOver.ogg"
+
 hitSound.src = "sound effects/hit.ogg"
 enhanceSound.src = "sound effects/Stat Raise.ogg"
 missSound.src = "sound effects/miss.ogg"
 healthSound.src = "sound effects/health.ogg"
 buttonSound.src = "sound effects/button.ogg"
 buttonSound2.src = "sound effects/button2.ogg"
-
-let introductions = [""]
 
 let gameFrameAttackingCharacter = 0
 let frameAttackingCharacter = 0
