@@ -134,10 +134,7 @@ function preBattle(){
         messageLogs.style.border = "3px solid #ECDBBA"
         messageLogs.style.borderRadius = "5px"
         messageLogs.width = canvas.width
-        
-        }else if(player1 === player2 || player1 === 3 || player2 === player3){
-            document.getElementById("characterSelect").innerHTML = ""
-    }
+        }
 }
 function resizeCanvas(size){
     if (size === "increase") {
