@@ -1,0 +1,129 @@
+body {
+    background-color: #191919;
+} h1 {
+    color: #ECDBBA;
+    font-size: 50px;
+    font-family: 'Lucida Sans';
+} h2 {
+    color: whitesmoke;
+    font-size: 20px;
+} #player1Selection, #player2Selection, #player3Selection {
+    color: whitesmoke;
+    font-size: 20px;
+} #characterSelect{
+    text-align: center;
+} #portraits {
+    width: 192px;
+    height: 192px;
+    border-radius: 5px;
+    outline: 5px solid #111111;
+    margin: 5px;
+} #portraitsList {
+    width: 48%;
+    height: 5%;
+    margin: auto;
+} #canvasHolder {
+    text-align: center;
+}canvas {
+    text-align: center;
+    margin-top: 10px;
+} #tdMessageLogs {
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+} #tableMessageLogs {
+    height: 60px;
+    margin: auto;
+} button {
+    font-size: large;
+    font-family: Impact;
+    color: #191919;
+    outline: 1px solid #C84B31;
+    background-color: #ECDBBA;
+} button:hover {
+    background-color: #2D4263;
+    outline: 0px;
+    transform: scale(1.25);
+} #portraits:hover{
+    transform: scale(1.05);
+    outline: 10px solid #C84B31;
+} #battleButtons{
+    text-align: center;
+    position: relative;
+    margin: auto;
+} #skillDescription {
+    position: absolute;
+    top: 700px;
+    left: 43%;
+} #skillButtons {
+    margin: auto;
+} #characterDescription {
+    border-radius: 5px;
+    width: 26%;
+    height: 603px;
+    position: absolute;
+    top: 315px;
+    left: 10px;
+    color: #ECDBBA;
+} #characterCloseUp {
+    border-radius: 5px;
+    width: 26%;
+    height: 303px;
+    position: absolute;
+    top: 315px;
+    right: 10px;
+    color: #ECDBBA;
+    overflow: hidden;
+} #characterIntroduction {
+    width: 26%;
+    height: 303px;
+    position:relative;
+    bottom: 320px;
+    right: 5px;
+    text-justify: distribute-all-lines;
+    font-family: "Georgia";
+    color: burlywood;
+    text-align: center;
+    margin-left: auto;
+    font-size: 25px;
+    overflow: hidden;   
+} h3 {
+    color: #ECDBBA;
+    font-size: 20px;
+} #characterName {
+    color: #ECDBBA;
+    font-size: 30px;
+} #closeUp {
+    height: 100%;
+} body::-webkit-scrollbar {
+    display: none;
+} #resizeButtons {
+    position: absolute;
+    top: 0;
+    left: 10;
+} a {
+    color: #070707;
+    font-size: 30px;
+} a:hover{
+    color: white;
+    cursor: pointer;
+} #enemyStats {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ECDBBA;
+} #playerStats {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ECDBBA;
+} #backgroundMusic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+} #backgroundMusic :hover {
+    color: white;
+    cursor: pointer;
+}

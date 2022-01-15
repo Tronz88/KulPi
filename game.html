@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Select</title>
+
+    <link rel="stylesheet" href="script/stylesheet.css" type="text/css">
+</head>
+<body>
+    <div id="characterSelect">
+        <a onclick="backgroundMusic()"><p id="backgroundMusic">♫</p></a>
+        <h1>Character Select</h1>
+        <h2>Pick 1 Character for each Player</h2>
+        <p id="player1Selection"><button onclick="playerList('player1')">Player 1</button>:</p>
+        <p id="player2Selection"><button onclick="playerList('player2')">Player 2</button>: </p>
+        <p id="player3Selection"><button onclick="playerList('player3')">Player 3</button>: </p>
+    
+        <div id="portraitsList"></div><br>
+    
+        <button onclick="preBattle()">Continue</button>
+        <div id="characterDescription">
+        </div>
+        <div id="characterCloseUp">
+        </div>
+        <div id="characterIntroduction"></div>
+    </div>
+    <div id="gameProper">
+        <div id="canvasHolder"><canvas height="0" width="0"></canvas></div>
+        <table id="tableMessageLogs"><tr><td id="tdMessageLogs"></td></tr></table>
+        <div id="battleButtons"></div>
+        <div id="resizeButtons"></div>
+        <div id="enemyStats"></div>
+        <div id="playerStats"></div>
+    </div>
+    
+</body>
+    <script type="text/javascript" src="script/characters.js"></script>
+    <script type="text/javascript" src="script/characterSelect.js"></script>
+    <script type="text/javascript" src="script/reset.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+    <script type="text/javascript" src="script/enemies.js"></script>
+    <script type="text/javascript" src="script/players.js"></script>
+    <script type="text/javascript" src="script/turns.js"></script>
+    <script type="text/javascript" src="script/deadManager.js"></script>
+</html>
